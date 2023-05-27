@@ -1,0 +1,42 @@
+###
+### A complete description of a Prefect Deployment for flow 'Start-Process'
+###
+name: etldayend1
+description: runs etl process after stock market closes for final end of the day price updates - run 1 time daily
+version: 698e697fa1fee855fbfc3a163b8f3874
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+work_pool_name: default-agent-pool
+tags: []
+parameters: {}
+schedule:
+  cron: 35 13 * * 1-5
+  timezone: Asia/Calcutta
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Real_Time_Data_Process
+manifest_path: null
+storage: null
+path: C:\Users\deepa\OneDrive\Documents\exam\Covid-19-Dashboard-in-Python-by-Plotly-Dash-main
+entrypoint: flows\price_data.py:Day_End_Data_Process
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-05-24T08:25:41.948017+00:00'
