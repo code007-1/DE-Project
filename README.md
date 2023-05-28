@@ -4,7 +4,7 @@ Data Engineering Project- Using Prefect (Scheduling Tool) and MongoDB as Databas
 2. Schedule Real time data loading from Finnhub API to Mongodb Dataase using Prefect Orchestration Tool (updates data everey 1 minute )
 3. Visaulize all data in React-NodeJs APP
 ## Screenshot of Schedules in Prefect
-<img src="images\reactapp.jpeg" alt="React App" width="200" height="200">
+<img src="images\reactapp.jpeg" alt="React App" width="700" height="700">
 
 ## Screenshot of React App
-<img src="prefectschedules.jpeg" alt="React App" width="200" height="200">
+<img src="prefectschedules.jpeg" alt="React App" width="700" height="700">
